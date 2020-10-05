@@ -12,7 +12,7 @@ if (confirm("¿Deseas saber acerca de autonomía económica de las  mujeres?") =
   userPreference = ask_name();
 }
 else {
-  userPreference = "Save Cancelled!";
+  userPreference = "Cancelado!";
 }
 var today = new Date();
- document.getElementById('time').innerHTML=today;
+document.getElementById('dtText').innerHTML=today;
