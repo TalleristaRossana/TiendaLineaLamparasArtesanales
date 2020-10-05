@@ -15,4 +15,4 @@ else {
   userPreference = "Cancelado!";
 }
 var today = new Date();
-document.getElementById('dtText').innerHTML=today;
+document.getElementById('time').innerHTML=today;
