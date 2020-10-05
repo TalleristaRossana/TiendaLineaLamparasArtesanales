@@ -16,4 +16,5 @@ else {
 }
 
 var today = new Date();
- document.getElementById('time').innerHTML=today;
+var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+document.getElementById('time').innerHTML=today;
