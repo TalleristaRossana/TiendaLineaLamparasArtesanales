@@ -14,3 +14,5 @@ if (confirm("¿Deseas saber acerca de autonomía económica de las  mujeres?") =
 else {
   userPreference = "Save Cancelled!";
 }
+var today = new Date();
+ document.getElementById('time').innerHTML=today;
