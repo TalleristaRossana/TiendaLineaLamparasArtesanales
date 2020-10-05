@@ -25,6 +25,7 @@
   </header>
   <main>
    <section id="intro">
+    <p> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%d %B, %Y" }}</time> </p>
     <marquee behavior="scroll" loop="-1" width="30%">
      <i><font color= "blue"><strong>La fecha de hoy : <span id="time"></span></strong></font></i>
     </marquee>  
