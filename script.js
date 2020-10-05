@@ -16,4 +16,4 @@ else {
 }
 
 var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
+document.getElementById("time").innerHTML = dt.toLocaleString();
