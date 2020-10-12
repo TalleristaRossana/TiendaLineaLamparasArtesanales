@@ -1,17 +1,6 @@
-//Fecha y hora actual
-var dt = new Date();
-document.getElementById("time").innerHTML = dt.toLocaleString();
-
 //Agregar productos por prompt
 alert("¡Bienvenidx, ahora puedes agregar productos a la tienda!");
-var userPreference;
 
-if (confirm("¿Deseas agregar productos a la tienda?") == true) {
-  userPreference = add_products();
-}
-else {
-  userPreference = "Cancelado!";
-}
 
 var names = [];
 var categories = [];
@@ -49,6 +38,15 @@ function add_products() {
   }
   return false;
 
+}
+
+var userPreference;
+
+if (confirm("¿Deseas agregar productos a la tienda?") == true) {
+  userPreference = add_products();
+}
+else {
+  userPreference = "Cancelado!";
 }
 
 //Para desplegar los productos
@@ -98,5 +96,8 @@ for (var y=0; y<names.length; y++)
      newDetails.appendChild(newBottomDetails);
     }
 
+    //Fecha y hora actual
+    var dt = new Date();
+    document.getElementById("time").innerHTML = dt.toLocaleString();
 
 
